@@ -21,7 +21,7 @@ function getYearPercentage() {
     var progressData = document.getElementById("data");
     progressData.innerHTML = yearCompletePercentInSeconds + " %";
   
-    console.log(`Year Percentage Completed: ${yearCompletePercentInSeconds}%`);
+    // console.log(`Year Percentage Completed: ${yearCompletePercentInSeconds}%`);
   }
   
   function getCurrentTime() {

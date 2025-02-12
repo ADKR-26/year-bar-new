@@ -1,6 +1,7 @@
 import { initSnowflakes } from "./side-scripts/snowFlake.js";
 import { fetchData } from "./side-scripts/visitCount.js";
 import { initYearFunctions } from "./side-scripts/yearFunction.js";
+import { displayLeaves } from "./side-scripts/leaves.js";
 
 console.log("%cHIRE ME", "font-size: 24px; color: #3498db; font-weight: bold;");
 console.log(
@@ -12,3 +13,4 @@ console.log(
 initSnowflakes();
 initYearFunctions();
 // fetchData();
+displayLeaves();
