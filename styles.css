@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  margin-top: 12%;
+  /* margin-top: 12%; */
   overflow: hidden;
 }
 
@@ -730,4 +730,271 @@ a {
     -webkit-transform: translate3d(-400px, 680px, 0) rotate(0deg);
     opacity: 0;
   }
+}
+
+/* ------------------------- CAMEL CSS ---------------------------- */
+
+:root {
+  --cor: #ffe466;
+  --bg: black;
+}
+
+.container {
+  margin-top: -5%;
+  position: relative;
+  width: 350px;
+  height: 250px;
+  left: 42%;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin-top: -20%;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    left: 15%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 950px) {
+  .container {
+    margin-top: -10%;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    margin-top: -5%;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    left: 40%;
+  }
+}
+
+.camel {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+
+.body {
+  width: 150px;
+  height: 90px;
+  border-radius: 100% 100% 80% 80%;
+  background: var(--cor);
+  animation: bodydown 6s infinite;
+}
+
+.conv {
+  width: 55px;
+  height: 90px;
+  border-radius: 100% 100% 80% 80%;
+  background: var(--cor);
+}
+
+.conv-left {
+  position: absolute;
+  top: -20px;
+  left: 25px;
+}
+
+.conv-right {
+  position: absolute;
+  top: -30px;
+  left: 70px;
+}
+
+.neck {
+  position: absolute;
+  top: -90px;
+  left: 5px;
+  width: 95px;
+  height: 140px;
+  border-radius: 70%;
+  transform: rotate(40deg);
+  box-shadow: 0px 45px 0 0 var(--cor);
+  animation: drinking 6s infinite;
+}
+
+.head {
+  position: absolute;
+  top: 95px;
+  left: -55px;
+  width: 70px;
+  height: 40px;
+  border-radius: 50% 50% 50% 70%;
+  background: var(--cor);
+  animation: drink 6s infinite;
+}
+
+.eye {
+  position: absolute;
+  top: 10px;
+  left: 45px;
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border-radius: 100%;
+  animation: pisca 2s infinite;
+}
+
+.ear {
+  position: absolute;
+  top: -10px;
+  left: 55px;
+  width: 15px;
+  height: 20px;
+  background: var(--cor);
+  border-radius: 100%;
+}
+
+.leg {
+  position: absolute;
+  top: 70px;
+  width: 15px;
+  height: 50px;
+  border-radius: 50% 50% 20% 50%;
+  background: var(--cor);
+}
+
+.foot {
+  position: absolute;
+  top: 40px;
+  left: -20px;
+  width: 25px;
+  height: 10px;
+  border-radius: 50% 20% 20% 20%;
+  background: var(--cor);
+}
+
+.left {
+  position: absolute;
+  left: 25px;
+  animation: down 6s infinite;
+}
+
+.right {
+  position: absolute;
+  left: 100px;
+  animation: down 6s infinite;
+}
+
+.top {
+  position: absolute;
+  top: 110px;
+  animation: top 6s infinite;
+}
+
+.tail {
+  position: absolute;
+  top: 25px;
+  left: 140px;
+  width: 15px;
+  height: 55px;
+  border-radius: 10% 80% 10% 50%;
+  background: var(--cor);
+  animation: drink 6s infinite;
+}
+
+.tongue {
+  position: absolute;
+  top: 10px;
+  left: -13px;
+  width: 10px;
+  height: 20px;
+  border-radius: 0 0 100% 100%;
+  transform: rotate(80deg);
+  background: tomato;
+  opacity: 0;
+  animation: visible 6s infinite;
+}
+
+@keyframes visible {
+  55% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+}
+
+.water {
+  position: absolute;
+  top: 195px;
+  left: -40px;
+  width: 175px;
+  height: 70px;
+  background: #98e0fb;
+  border-radius: 100%;
+}
+
+@keyframes drink {
+  60% {
+    transform: translate3d(10px, 10px, 0px) rotate(-75deg);
+  }
+}
+
+@keyframes drinking {
+  60% {
+    transform: translate3d(-50px, 55px, 0px) rotate(10deg);
+  }
+}
+
+@keyframes pisca {
+  10% {
+    background: var(--cor);
+  }
+}
+
+@keyframes bodydown {
+  60% {
+    transform: translateY(60px);
+  }
+}
+
+@keyframes down {
+  60% {
+    transform: rotate(-35deg);
+  }
+}
+
+@keyframes top {
+  60% {
+    transform: rotate(35deg);
+  }
+}
+
+/* --------------- RAIN ------------------------ */
+
+canvas {
+  display: block;
+  height: 90rem;
+  width: 120rem;
+  z-index: 1;
+}
+
+.main-content {
+  position: absolute;
+  top: 20%;
+  left: 37%;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  z-index: 5;
+  /* pointer-events: none; */
+}
+
+.content {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
 }

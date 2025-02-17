@@ -135,23 +135,28 @@ function setResetFlag(e) {
   resetPosition = true;
 }
 
+function isWinter() {
+  const month = new Date().getMonth() + 1; // getMonth() returns 0-11
+  return month >= 11 && month <= 12 || month >= 1 && month <= 2; // September, October, November
+}
+
 function initSnowflakes() {
   let date = new Date();
-  let currentYear = date.getFullYear();
-  let todayDate = new Date();
+  // let currentYear = date.getFullYear();
+  // let todayDate = new Date();
 
-  let start;
-  let end;
+  // let start;
+  // let end;
 
-  if (currentYear === currentYear + 1) {
-    start = new Date(`${currentYear}-01-01T00:00:00Z`);
-    end = new Date(`${currentYear}-03-02`);
-  } else {
-    start = new Date(`${currentYear}-10-01`);
-    end = new Date(`${currentYear}-12-31T23:59:59Z`);
-  }
+  // if (currentYear === currentYear + 1) {
+  //   start = new Date(`${currentYear}-01-01T00:00:00Z`);
+  //   end = new Date(`${currentYear}-03-02`);
+  // } else {
+  //   start = new Date(`${currentYear}-10-01`);
+  //   end = new Date(`${currentYear}-12-31T23:59:59Z`);
+  // }
 
-  if (todayDate >= start && todayDate <= end) {
+  if (isWinter()) {
     var oldElement = document.getElementById("snowflakeInactive");
     oldElement.id = "snowflakeContainer";
     setup();

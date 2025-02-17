@@ -10,123 +10,164 @@
   </head>
 
   <body>
-    <div id="snowflakeInactive">
-      <p class="snowflake">❆</p>
+    <!-- ----------------------- RAIN ----------------------- -->
+    <!-- https://codepen.io/harshpreet_singh/pen/GRVwGYR -->
+    <canvas id="stormCanvas"> </canvas>
+    <!-- ----------------------- RAIN ----------------------- -->
+
+    <div class="content">
+      <!-- -------------- WINTER ----------------- -->
+      <div id="snowflakeInactive">
+        <p class="snowflake">❆</p>
+      </div>
+      <!-- -------------- WINTER ----------------- -->
+
+      <!-- ------------------- AUTUMN ------------------- -->
+      <div class="leaf">
+        <div id="leaves">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        <div id="leaves">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        <div id="leaves">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        <div id="leaves">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        <div id="leaves">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+      </div>
+      <!-- ------------------- AUTUMN ------------------- -->
+
+      <!-- ------------------- NEW YEAR ------------------- -->
+      <div id="newYear" class="new-year">
+        <h1>HAPPY NEW YEAR</h1>
+        <div id="firework" class="pyro">
+          <div class="before"></div>
+          <div class="after"></div>
+        </div>
+      </div>
+      <!-- ------------------- NEW YEAR ------------------- -->
+
+      <h1>Year Completed so Far</h1>
+
+      <div id="data"></div>
+      <div class="progressBar">
+        <progress value="" max="100" id="myProgress"></progress>
+      </div>
+      <h2>Current Time:</h2>
+      <div id="currentTime"></div>
+
+      <!-- ------------------- SUMMER ------------------- -->
+      <div class="container">
+        <div class="water"></div>
+        <div class="camel">
+          <div class="body">
+            <div class="tail"></div>
+            <div class="conv conv-left"></div>
+            <div class="conv conv-right"></div>
+          </div>
+          <div class="neck">
+            <div class="head">
+              <div class="ear"></div>
+              <div class="tongue"></div>
+              <div class="eye"></div>
+            </div>
+          </div>
+          <div class="leg left top">
+            <div class="foot"></div>
+          </div>
+          <div class="leg left"></div>
+          <div class="leg right top">
+            <div class="foot"></div>
+          </div>
+          <div class="leg right"></div>
+        </div>
+      </div>
+      <!-- ------------------- SUMMER ------------------- -->
+      <!-- https://codepen.io/daliannyvieira/pen/YZwLQO -->
+      <div class="me">
+        <a href="https://adkr-portfolio.vercel.app/"> By ADKR </a>
+      </div>
+
+      <div class="visit">Visit Count:</div>
+      <div class="visitCount" id="visitCount"></div>
+
+      <!-- CHRISTMAS TREE -->
     </div>
-
-    <div class="leaf">
-      <div id="leaves">
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-      </div>
-      <div id="leaves">
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-      </div>
-      <div id="leaves">
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-      </div>
-      <div id="leaves">
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-      </div>
-      <div id="leaves">
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-      </div>
-    </div>
-
-    <div id="newYear" class="new-year">
-      <h1>HAPPY NEW YEAR</h1>
-      <div id="firework" class="pyro">
-        <div class="before"></div>
-        <div class="after"></div>
-      </div>
-    </div>
-
-    <h1>Year Completed so Far</h1>
-
-    <div id="data"></div>
-    <div class="progressBar">
-      <progress value="" max="100" id="myProgress"></progress>
-    </div>
-    <h2>Current Time:</h2>
-    <div id="currentTime"></div>
-
-    <div class="me">
-      <a href="https://adkr-portfolio.vercel.app/"> By ADKR </a>
-    </div>
-
-    <div class="visit">Visit Count:</div>
-    <div class="visitCount" id="visitCount"></div>
-
-    <!-- CHRISTMAS TREE -->
 
     <script type="module" src="script.js"></script>
   </body>
